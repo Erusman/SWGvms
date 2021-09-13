@@ -1,2 +1,2 @@
 # SWGvms
-A repository for storing the SWGvms website.
+This repo is for storing the SWGvms website.
