@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="stylesheet" href="./index/style.css">
     <script src="./index/scale.fix.js.download"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
     <div class="wrapper">
       <header>
         <img src="./index/erusman.jpg" class="spaceball">
         <h1><a href="https://Erusman.github.io/">Erusman</a></h1>
-        
           <p>Open Source SWG Developer</p>
         
         <p class="view"><a href="https://github.com/Erusman">View on GitHub <small></small></a></p>
@@ -23,10 +18,11 @@
       </header>
       <section>
 
-<h2 id="swgvms">SWGvms</h2>
+<h1 style="text-align:center;" id="swgvms">SWGvms</h1>
+<h4 style="text-align:center;" id="swg">Star Wars Galaxies Virtual Machines</h4>
+<p style="text-align:center;" >This website is dedicated to offering alternate VM's for the SWG-Source github project.</p>
 
-<p>This website is dedicated to offering alternate VM's for the SWG-Source github project.</p>
-
+<p>&nbsp;</p>
 <h3 id="prerequisites">Prerequisites</h3>
 
 <p>You will need to have <a href="https://www.virtualbox.org/">Oracle VirtualBox</a> installed on your host machine before you begin. VirtualBox test version 6.1.27 r146688 is recommended because VirtualBox Guest additions 6.1.27 is pre-installed on each VM. You can download VirtualBox Test builds here: <a href="https://www.virtualbox.org/wiki/Testbuilds">Oracle VirtualBox Testbuilds</a> </p>
@@ -42,73 +38,61 @@
 <p>All of my pre-built VM's will come defaulted to use the IP of 192.168.1.47 & mac 080027F3A637. I recommend going into your home router setup and reserving the IP of 192.168.1.47 & mac 080027F3A637 to the VM which hosts name is 'swg'.  Each VM's desktop does offer a script which will help you configure the VM's host and hostname with a custom IP of your choice. The VM's will come in .ova (Open Virtualization Format 1.0) If you want to keep current configured IP's of (192.168.1.47 and mac be sure to select 'Include all network adapters and MAC address's on import!').
 <p>The reason why you must setup the VM's host IP correctly, is that your home router will continously assign a different IP to the VM each time you restart it. And you will need to reconfigure the SWG-Source IP's that the server starts with. 
 
-<p>After you configure your hosts and IP. Simply double click the 'Setup SWG-Source v3.x server' icon on your desktop to build the SWG server.  I have included a 'Remove SWG-Source v3.x server' shortcut on the desktop as well. Once you launch it a script will run that will purge the SWG-Source Server from your VM as well as DELETE the entire imported SWG Database. Essentially allowing you to start over fresh again with a new server. Most of which you can just do with ANT commands. An Ant command guide is on each VM's desktop. Have fun!</p>     
+<p>&nbsp;</p>
+<h3 id="installation">Installation of the SWG-Source server</h3>
+<p>After you have chosen and configured the VM of your choice. Simply double click the 'Setup SWG-Source v3.x server' icon on your desktop to build the SWG-Source server.  Reboot and start the server in Terminator terminal. (./stationchat to start the chat server and ./startServer to start the SWG-Source server)</p>
+<h3 id="removal">Removal of the SWG-Source server</h3>
+<p>I have included a 'Remove SWG-Source v3.x server' icon shortcut on the desktop as well. Once you launch it a script will run that you can use to purge the SWG-Source Server from your VM. This will DELETE the entire SWG-Source server and the imported SWG Oracle Database. Essentially allowing you to start over fresh again if you need to.</p> 
+<p>Note: There are also guides on each VM's Desktop on how to use 'ant' commands on your server. As well as optimizations.</p>     
+<p>Have fun!</p>
 
-<h3 id="debian-10-vm">Debian 10.10 VM</h3>
-
-<p>Linux Kernel 5.11. SRC Compiler GCC 7. Oracle 19.3 & SQL Developer 21.2</p>
-          
+<p>&nbsp;</p>
+<h2 style="text-align:center;" id="debian-10-vm">Debian 10.10 "BUSTER" VM</h2>
+<p style="text-align:center;">Linux Kernel 5.11. SRC Compiler GCC 7. Oracle 19.3 & SQL Developer 21.2</p>
 <p><img src="./index/debian10.png"><p>
-
 <p>DOWNLOAD Debian 10.10 "BUSTER" SWG-Source VM</p>
+<img src="./index/spaceball.gif" class="spaceball">
 <p> <a href="https://drive.google.com/u/0/uc?id=1mQjAO_8nwZ0eIEu_B2XrVGaFw6_FF7k1&export=download">SWG-Source VM Debian 10.10</a> <p>
 <p>Note: Please allow your VM's Oracle Database to shutdown properly. Proper shutdown after exiting your VM is scripted for 35 seconds.</p>
 
-
-          
-<h3 id="debian-11-vm">Debian 11 VM</h3>
-
-<p>Linux Kernel 5.11. SRC Compiler GCC 9.4.  Oracle 19.3 & SQL Developer 21.2</p>
-          
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 style="text-align:center;" id="debian-11-vm">Debian 11 "BULLSEYE" VM</h2>
+<p style="text-align:center;">Linux Kernel 5.11. SRC Compiler GCC 9.3.  Oracle 19.3 & SQL Developer 21.2</p>
 <p><img src="./index/debian11.png"><p>
-
 <p>DOWNLOAD Debian 11 "BULLSEYE" SWG-Source VM</p>
-<p>https://<p>
+<img src="./index/ludicrous.gif" class="spaceball">
+<p> <a href="https://drive.google.com/u/0/uc?id=1-5IkG2m86CRe1K9uU_3ja_B-jTmOYFKX&export=download">SWG-Source VM Debian 11</a> <p>
 <p>Note: Please allow your VM's Oracle Database to shutdown properly. Proper shutdown after exiting your VM is scripted for 35 seconds.</p>
 
 
-
-
-<h3 id="linux-mint-20-vm">Linux Mint 20.2 VM</h3>
-
-<p></p>
-
-<p><img src="./index/picture.png"></p>
-
-<p>DOWNLOAD Linux Mint 20.2 SWG-Source VM</p>
-<p>https://<p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 style="text-align:center;" id="linux-mint-20-vm">Linux Mint 20.2 VM</h2>
+<p>Coming soon</p>
 
 
 
-
-<h3 id="linux-mint-19-vm">Linux Mint 19.3 VM</h3>
-
-<p></p>
-
-<p><img src="./index/picture.png"></p>
-
-<p>DOWNLOAD Linux Mint 19.3 SWG-Source VM</p>
-<p>https://<p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 style="text-align:center;" id="linux-mint-19-vm">Linux Mint 19.3 VM</h2>
+<p>Coming soon</p>
 
 
 
-<h3 id="ubuntu-20-vm">Ubuntu 20.04 LTS VM</h3>
-
-<p></p>
-
-<p><img src="./index/picture.png"></p>
-
-<p>DOWNLOAD Ubuntu 20.04 LTS SWG-Source VM</p>
-<p>https://<p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 style="text-align:center;" id="ubuntu-20-vm">Ubuntu 20.04 LTS VM</h2>
+<p>Coming soon</p>
+<p>&nbsp;</p>
 
 
 
       </section>
     </div>
     <footer>
-      <p>© 2021 Erusman - https://Erusman.github.io - https://github.com/Erusman</p>
+     <p>© 2021 Erusman - https://Erusman.github.io - https://github.com/Erusman</p>
     </footer>
-
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
   
 --></body></html>
